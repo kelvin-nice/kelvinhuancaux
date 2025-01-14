@@ -1,0 +1,10 @@
+.header-containt{
+    width: 100%;
+    background-color: var(--background-colors);
+}
+
+.nav-bar{
+    max-width: 1100px;
+    padding: 0px 8px;
+    height: 100px;
+}
