@@ -1,10 +1,191 @@
-.header-containt{
+/* .header-containt{
     width: 100%;
-    background-color: var(--background-colors);
+    height: auto;
+    z-index: 99;
+    
+} */
+.nav-bar{
+    top: 0;
+    z-index: 1000;
+    max-width: 1100px;
+    padding: 16px 18px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    
+}
+.menu-mobile{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 72px;
+    left: 0;
+    font-size: 24px;
+    z-index: 999;
+    /* Suave desplazamiento del menu */
+    max-height: 0;
+    overflow: hidden; /* Oculta el contenido al cerrar */
+    transition: max-height 0.3s ease;
+
+    background-color: rgba(7, 8, 27, 0.703);
+    backdrop-filter: blur(10px); /* Desenfoque de los elementos detrás */
+    -webkit-backdrop-filter: blur(25px); /* Compatibilidad con navegadores Webkit */
+        
 }
 
-.nav-bar{
-    max-width: 1100px;
-    padding: 0px 8px;
-    height: 100px;
+.menu-mobile.open {
+    max-height: 400px; /* Altura máxima del menú desplegado */
+  }
+.menu-mobile ul li{
+    padding: 35px 10px;
+}
+
+.izquierda{
+    display: none;
+}
+.derecha{
+    display: none;
+}
+
+.bar-icon{
+    margin-top: 8px;
+    position: absolute;
+    right: 0;
+    margin-right: 16px;
+}
+.bar-icon img{
+    width: 34px;
+    transition: all 0.3s ease;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 38px;
+    height: 28px;
+    margin-right: 88px;
+}
+
+
+@media (min-width: 768px){
+    /* izquierda */
+    .menu-mobile{
+        display: none;
+        overflow: hidden;
+
+    }
+    .menu-mobile.open{
+        display: none;
+        overflow: hidden;
+    }
+    .header-containt{
+        width: 100%;
+        margin-top: 20px;
+        position: -webkit-sticky; /* Para compatibilidad con Safari */
+        position: sticky;
+        z-index: 99;
+    }
+    .nav-bar{
+        margin: 0 auto;
+        position: sticky; /* Fijo en escritorio */
+        z-index: 1000;
+        max-width: 1100px;
+        padding: 16px 18px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    
+        background-color: rgba(7, 8, 27, 0.7); /* Fondo negro con 70% de opacidad */
+        backdrop-filter: blur(5px); /* Desenfoque de los elementos detrás */
+        -webkit-backdrop-filter: blur(25px);
+    }
+    .logo{
+        width: 48px;
+        height: auto;
+        margin-right: 88px;
+    }
+
+    .izquierda{
+        display: flex;
+        /* height: 72px; */
+    }
+    .derecha{
+        display: block;
+        margin-left: auto;
+    }
+
+    .izquierda ul{
+        display: flex;
+        /* height: 72px; */
+    }
+    .izquierda li{
+        margin-right: 60px;
+        margin-top: 25px;
+        height: 50px;
+    }
+    .izquierda ul li a{
+        cursor: pointer;
+        
+    }
+    .bar-icon{
+        display: none;
+    }
+
+    .menu-item {
+    text-decoration: none;
+    color: white; /* Color del texto */
+    position: relative;
+    padding: 5px 5px; /* Espaciado vertical */
+    transition: color 0.3s ease; /* Transición del color */
+    font-size: 18px;
+  }
+  
+  /* Línea decorativa debajo del enlace */
+  .menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px; /* Grosor de la línea */
+    width: 0; /* Inicia con un ancho de 0 */
+    background-color: white; /* Color de la línea */
+    transition: width 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto al pasar el cursor */
+  .menu-item:hover::after {
+    width: 100%; /* La línea se expande a todo el ancho */
+  }
+  
+  .menu-item:hover {
+    color: white; /* Cambia el color del texto al pasar el cursor */
+  }
+  
+  /* Estilo activo para mantener la línea */
+  .menu-item.active::after {
+    width: 100%;
+    
+  }
+  
+  /* Estilo para el texto activo */
+  .menu-item.active {
+    color: white;
+  }
+
+
+
+/* derecho */
+
+.derecha img{
+    width: 30px;
+    height: auto;
+}
+.derecha .behance, .github{
+    cursor: pointer;
+    margin-right: 28px;
+}
+.derecha .linkedin{
+    cursor: pointer;
+}
 }

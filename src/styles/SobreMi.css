@@ -1,0 +1,195 @@
+
+section{
+    width: 100%;
+}
+.contenedor-sobremi{
+    max-width: 1100px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.elipse-fu-s{
+    width: 400px;
+    position: absolute;
+    z-index: -1;
+    left: -200px;
+    top: -50px;
+}
+
+.foto{
+    padding-bottom: 20px;
+    width: 162px;
+}
+.datos{
+    text-align: center;
+    width: 100%;
+}
+.datos h1{
+    line-height: 28px;
+}
+.datos p{
+    font-size: 16px;
+}
+.datos p span{
+    font-weight: 600;
+    line-height: 16px;
+}
+.datos h1 span{
+    font-size: 18px;
+    font-weight: bold; /* Grosor del texto */
+  background: linear-gradient(90deg, #FF3D91, #22C4FF); /* Degradado de colores */
+  -webkit-background-clip: text; /* Aplica el fondo al texto */
+  -webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el degradado */
+}
+
+.text-formacion{
+    margin-bottom: 8px;
+}
+.formacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+}
+
+.idc{
+    border-radius: 4px;
+    margin-right: 8px;
+    width: 34px;
+}
+.idat{
+    margin-right: 8px;
+    width: 25px;
+}
+.carreras{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    gap: 40px
+    ;
+}
+
+.experiencias{
+    text-align: left;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.experiencias h2{
+
+    text-decoration: underline;
+  text-decoration-thickness: 4px; /* Grosor */
+  text-decoration-color: #ffffff; /* Color */
+  text-underline-offset: 12px; /* Distancia del texto */
+}
+.experiencia{
+    border-radius: 0px;
+    padding-top: 30px;
+    max-width: 650px;
+    margin-bottom: 15px;
+}
+.experiencia p{
+    margin-bottom: 0px;
+    margin-top: 6px;
+}
+.experiencia p span{
+    font-size: 18px;
+    color: white;
+}
+.fecha{
+    color: #57d2ff;
+}
+
+
+.funciones{
+    margin-top: 14px;
+}
+.funciones ul{
+    list-style-type: disc !important;
+    margin-left: 5px; /* Ajusta el margen si es necesario */
+  padding-left: 14px; /* Ajusta el espacio entre las viñetas y el texto */
+  color: white; /* Texto en blanco */
+}
+.funciones ul li{
+    line-height: 20px;
+    padding: 12px 0px;
+    width: 100%;
+}
+.logro{
+    padding: 14px 18px;
+    line-height: 20px;
+    background-color: rgb(17, 17, 17);
+    border-radius: 15px;
+}
+.logro a{
+    text-decoration: underline;
+    text-underline-offset: 4px; /* Distancia del texto */
+}
+
+@media (min-width: 768px){
+    section{
+        margin-top: 70px;
+    }
+    .contenedor-sobremi{
+    max-width: 1100px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    margin: 0 auto;
+    justify-content: center;
+    }
+    .datos{
+        text-align: left;
+        max-width: 700px;
+    }
+    .foto{
+        padding-bottom: 20px;
+        width: 162px;
+        height: 162px;
+        margin-right: 50px;
+    }
+    .datos h1{
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    .datos h1 span{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .datos p{
+        font-size: 16px;
+    }
+    .datos p span{
+        font-weight: 600;
+        line-height: 16px;
+    }
+    
+    .funciones ul li{
+        font-size: 16px;
+        font-weight: 300 !important;
+    }
+    .formacion{
+        display: flex;
+        justify-content: left;
+        width: 130px;
+    }
+    .text-formacion{
+        margin-bottom: 0px;
+    }
+    
+    .carreras{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 40px
+        ;
+    }
+    .experiencia{
+        margin-bottom: 25px;
+    }
+}
