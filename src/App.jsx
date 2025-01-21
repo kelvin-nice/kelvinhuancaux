@@ -10,6 +10,7 @@ import ItHub from './pages/ItHub';
 import DesignSystemInterbank from './pages/DesignSystemInterbank';
 import Footer from './componentes/Footer';
 
+
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/it-hub' element={ <ItHub/> } />
         <Route path='/design-system' element={ <DesignSystemInterbank/> } />
       </Routes>
+      <Home />
       <Footer/>
     </Router>
   )
