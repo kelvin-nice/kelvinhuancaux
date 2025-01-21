@@ -24,7 +24,6 @@ function App() {
         <Route path='/it-hub' element={ <ItHub/> } />
         <Route path='/design-system' element={ <DesignSystemInterbank/> } />
       </Routes>
-      <Home />
       <Footer/>
     </Router>
   )
