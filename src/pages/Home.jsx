@@ -46,7 +46,7 @@ const Home = () => {
           <p>UX UI Designer &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Product designer &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; UI Developer </p>
         </div>
         <div className='btns'>
-          <a href="https://drive.google.com/file/d/1zkOdCZwjSaJuDsj9Fq_Vv9kfkEQ7yt39/view?usp=drive_link" download><button className='btn-descargar' >Descargar mi CV</button></a>
+          <a href="https://drive.google.com/file/d/18LPrPhdUqPtmQ2er0VlLYJjYHb7PRVQN/view?usp=sharing" download><button className='btn-descargar' >Descargar mi CV</button></a>
 
           
           <a > 
