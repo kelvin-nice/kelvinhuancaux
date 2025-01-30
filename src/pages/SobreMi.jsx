@@ -46,6 +46,30 @@ const SobreMi = () => {
             <h2>Experiencia</h2>
 
 
+            {/* Independiente */}
+            <article className='experiencia' >
+            <p><span>Independiente (Freelance)</span></p>
+            <p>Cargo: <span>UX UI designer</span></p>
+            <p className='fecha' >(Diciembre 2023 - Actualmente) Lima, Perú</p>
+            <div className='funciones' >
+              <h4 >Empresas:</h4>
+              <ul>
+                <li><span style={{fontWeight:"600"}} >Universidad Continental:</span> <br/>
+
+                Diseño de prototipado centrado en el usuario para las interfaces de la intranet en las secciones:“Convalidación de cursos” y “Traslado externo”. Uso del Figma y Adobe Suite para el prototipo y el “design system”. Además de la Maquetación frontend responsive utilizando Angular.</li>
+                
+                <li> <span style={{fontWeight:"600"}} >Laive:</span> <br/>
+
+                Diseño de la versión 2.0 de la aplicación de ventas y su back-o ffice. Uso de Maze para testeo y obtener insights de los suarios. También la redefinición del User Flow y la Arquitectura de la Información, basados en insights obtenidos a través del Maze. Además del diseño de pantallas en Figma y mapeo del happy path, errores, y casuísticas.</li>
+              </ul>
+            </div>
+            </article>
+
+            <br/>
+
+
+
+
             {/* INTERBANK */}
             <article className='experiencia' >
             <p>Empresa: <span>INTERBANK</span></p>
@@ -67,7 +91,7 @@ const SobreMi = () => {
                 <li>Reuniones semanales del equipo UX/UI para coordinar avances, mejoras y estar sincronizados.</li>
               </ul>
               <div className='logro' >
-                <p>Logro: Gracias un exahustivo researching y testing de propuestas se logró el cambió de la interface del Login “Banca por Internet / Empresas” a un login 2.0 <br/><br/>
+                <p>Logro: Gracias a un exhaustivo researching y testing de propuestas se logró el cambió de la interface del Login “Banca por Internet / Empresas” a un login 2.0 <br/>
                 <a href="https://empresas.interbank.pe/login"> https://empresas.interbank.pe/login</a></p>
               </div>
             </div>
@@ -99,8 +123,8 @@ const SobreMi = () => {
                 (media query, flexbox y grid), JAVASCRIPT y JQuery de manera responsive.</li>
               </ul>
               <div className='logro' >
-                <p>Logro: Mejoré la UI de la aplicación “SGS Workforce | scalable global solution” a través del método “Card sorting” y “entrevistas a stakeholders”, pude ordenar la información y dar jerarquía a lo que deseaba ver el usuario en medio de un conglomerado de información.  <br/><br/>
-                <a href="https://play.google.com/store/apps/details?id=com.sgsapp&hl=es_PE"> SGS Workforce</a></p>
+                <p>Logro: Mejoré la UI de la aplicación “Smart Chain ” a través del método “Card sorting” y “entrevistas a stakeholders”, pude ordenar la información y dar jerarquía a lo que deseaba ver el usuario en medio de un conglomerado de información.  <br/>
+                <a href="https://smartchain.sgs.com/#/auth/login"> https://smartchain.sgs.com/</a></p>
               </div>
             </div>
             </article>

@@ -9,6 +9,7 @@ import Interbank from './pages/Interbank';
 import ItHub from './pages/ItHub';
 import DesignSystemInterbank from './pages/DesignSystemInterbank';
 import Footer from './componentes/Footer';
+import UniContinental from './pages/UniContinental';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/interbank' element={ <Interbank/> }  />
         <Route path='/it-hub' element={ <ItHub/> } />
         <Route path='/design-system' element={ <DesignSystemInterbank/> } />
+        <Route path='/universidad-continental' element={ <UniContinental/> } />
       </Routes>
       <Footer/>
     </Router>

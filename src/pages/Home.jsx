@@ -14,6 +14,7 @@ import invision from '../assets/invision.png'
 import maze from '../assets/maze.png'
 import designSystemInterbank from '../assets/design-system-interbank.png';
 import behanceCard from '../assets/behance-card.png';
+import uniContinental from '../assets/uni-continental.png';
 /* import { useNavigate } from 'react-router-dom' */
 import { useState } from 'react';
 import Modal from 'react-awesome-modal';
@@ -126,6 +127,11 @@ const Home = () => {
           <Link to='/design-system' onClick={()=> window.scrollTo(0, 0)} >
             <article>
               <img src={designSystemInterbank} className='articulo' alt="design-system-interbank" />
+            </article>
+          </Link>
+          <Link to='/universidad-continental' onClick={()=> window.scrollTo(0, 0)} >
+            <article>
+              <img src={uniContinental} className='articulo' alt="Universidad Continental" />
             </article>
           </Link>
           <a href='https://www.behance.net/kelvinhuanca' target='_blank' onClick={()=> window.scrollTo(0, 0)} >
