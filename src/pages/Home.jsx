@@ -77,7 +77,7 @@ const Home = () => {
         <div className='text-head-dos' >
           <h1>Análisis, diseño, testeo  y programación.</h1>
           <p>Involucrar la estética, funcionalidad y una buena experiencia centrado en el usuario es mi objetivo en cada proyecto. Entregar soluciones eficientes que aporten un valor al producto o negocio.</p>
-          <a href="/sobre-mi" ><button className='btn-experiencia' > Mi experiencia <img src={arrowRight} alt='arrow-right' /> </button></a>
+          <Link to='/sobre-mi' ><button className='btn-experiencia' > Mi experiencia <img src={arrowRight} alt='arrow-right' /> </button></Link>
 
         </div>
         <div className='cebrero-ux' >
