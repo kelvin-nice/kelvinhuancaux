@@ -103,6 +103,10 @@ section{
     font-weight: 700;
     transition: color 0.3s ease;
 }
+.btn-descargar svg{
+    margin-left: 4px;
+    font-size: bold;
+}
 .btn-contactar{
     position: relative;
     background-color: #020817;
@@ -543,10 +547,11 @@ article:hover .articulo {
     .btns a .btn-contactar{
         width: 160px;
     }
-    .btn-descargar{
+    .btns a .btn-descargar{
         border: 0px;
         font-weight: 600;
         color: #020817;
+        width: 200px;
     }
     .maze{
         position: absolute;

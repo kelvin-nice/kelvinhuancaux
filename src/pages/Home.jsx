@@ -47,7 +47,7 @@ const Home = () => {
           <p>UX UI Designer &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Product designer &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; UI UX Engineer </p>
         </div>
         <div className='btns'>
-          <a href="https://drive.google.com/file/d/1omPsdu_B6UJZ6Jc_S_C66knXpYj_itxo/view?usp=sharing" download><button className='btn-descargar' >Descargar mi CV   </button></a>
+          <a href="https://drive.google.com/file/d/1omPsdu_B6UJZ6Jc_S_C66knXpYj_itxo/view?usp=sharing" download><button className='btn-descargar' >Descargar mi CV <svg xmlns="http://www.w3.org/2000/svg" fill='#020817' id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24" width="14" height="14"><path fill='#020817' d="M12.033,19.011a3.489,3.489,0,0,0,2.475-1.024l3.919-3.919-2.121-2.121-2.782,2.782L13.5,0l-3,0,.024,14.709L7.76,11.947,5.639,14.068l3.919,3.919A3.487,3.487,0,0,0,12.033,19.011Z"/><path fill='#020817' d="M21,16v5H3V16H0v5a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V16Z"/></svg> </button></a>
 
           
           <a > 

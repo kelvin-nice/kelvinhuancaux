@@ -83,7 +83,7 @@ const NavBar = () => {
                     className="link-mobile"
                     onClick={close}
                 >
-                    Sobre mí
+                    Experiencia
                 </Link>
                 </li>
                 <li>
@@ -120,7 +120,7 @@ const NavBar = () => {
                 className={`menu-item ${active === "sobre-mi" ? "active" : ""}`}
                 onClick={() => handleActive("sobre-mi")}
               >
-                Sobre mí
+                Experiencia
               </Link>
             </li>
             <li>
