@@ -14,7 +14,7 @@ const SobreMi = () => {
         <div className='datos'>
 
           <h1>Kelvin Huanca Arcos</h1>
-          <h1><span>UX UI Designer &nbsp; | &nbsp; Product designer &nbsp; | &nbsp; UI developer </span></h1>
+          <h1><span>UX UI Designer &nbsp; | &nbsp; Product designer &nbsp; | &nbsp; UI UX Engineer </span></h1>
           <p>Cel.: <span>+51 915 173 767</span></p>
           <p>Ubicación: <span>Lima, Perú</span></p>
 

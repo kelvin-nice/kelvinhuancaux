@@ -1,6 +1,6 @@
 import '../styles/Home.css'
 import figma from '../assets/icono-figma.png'
-import arrowRight from '../assets/arrow-right.png'
+/* import arrowRight from '../assets/arrow-right.png' */
 import cerebro from '../assets/cerebro.png'
 import sombra from '../assets/cerebro-sombra.png'
 import uxui from '../assets/uxui.png'
@@ -42,16 +42,16 @@ const Home = () => {
       <img src={figma} alt='icono figma' className='figma-ico' />
 
         <div className='text-head' >
-          <h1>Hola, soy Kelvin</h1>
-          <h1>un <span>UX UI Senior</span> </h1>
-          <p>UX UI Designer &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Product designer &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; UI Developer </p>
+          <h1 className='hola' >Hola, soy Kelvin</h1>
+          <h1 className='abajo' >un <span>UX Senior</span> con pasión de junior</h1>
+          <p>UX UI Designer &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Product designer &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; UI UX Engineer </p>
         </div>
         <div className='btns'>
-          <a href="https://drive.google.com/file/d/1omPsdu_B6UJZ6Jc_S_C66knXpYj_itxo/view?usp=sharing" download><button className='btn-descargar' >Descargar mi CV</button></a>
+          <a href="https://drive.google.com/file/d/1omPsdu_B6UJZ6Jc_S_C66knXpYj_itxo/view?usp=sharing" download><button className='btn-descargar' >Descargar mi CV   </button></a>
 
           
           <a > 
-          <button onClick={() => setIsVisible(true)}className='btn-contactar' > Contáctame <img src={arrowRight} alt='arrow-right' /> </button>
+          <button onClick={() => setIsVisible(true)}className='btn-contactar' > Contáctame {/* <img src={arrowRight} alt='arrow-right' /> */} </button>
 
           <Modal visible={isVisible} width="400" height="300" effect="fadeInUp" onClickAway={() => setIsVisible(false)}>
           <div className='content-modal'>
@@ -75,9 +75,15 @@ const Home = () => {
     <section>
       <div className='contenedor-dos' >
         <div className='text-head-dos' >
-          <h1>Análisis, diseño, testeo  y programación.</h1>
+          <div className='content-text'>
+            <h1>Análisis, diseño, testeo, prototipado y programación.</h1>
+            <span className="corner top-left"></span>
+            <span className="corner top-right"></span>
+            <span className="corner bottom-left"></span>
+            <span className="corner bottom-right"></span>
+          </div>
           <p>Involucrar la estética, funcionalidad y una buena experiencia centrado en el usuario es mi objetivo en cada proyecto. Entregar soluciones eficientes que aporten un valor al producto o negocio.</p>
-          <Link to='/sobre-mi' ><button className='btn-experiencia' > Mi experiencia <img src={arrowRight} alt='arrow-right' /> </button></Link>
+          <Link to='/sobre-mi' onClick={()=> window.scrollTo(0, 0)} ><button className='btn-experiencia' > Mi experiencia  <svg viewBox="0 0 12 13" fill="white" width="12" height="13" data-astro-cid-cyzdmxr5=""><path d="M0.329505 12.4312C-0.109835 11.9919 -0.109835 11.2796 0.329505 10.8402L8.15901 3.01074H2.625C2.00368 3.01074 1.5 2.50706 1.5 1.88574C1.5 1.26442 2.00368 0.760742 2.625 0.760742H10.875C11.4963 0.760742 24 1.26442 12 1.88574V10.1357C12 10.7571 11.4963 11.2607 10.875 11.2607C10.2537 11.2607 9.75 10.7571 9.75 10.1357V4.60173L1.9205 12.4312C1.48116 12.8706 0.768844 12.8706 0.329505 12.4312Z" clipRule="evenodd" fillRule="evenodd" fill="white" data-astro-cid-cyzdmxr5=""></path></svg> </button></Link>
 
         </div>
         <div className='cebrero-ux' >

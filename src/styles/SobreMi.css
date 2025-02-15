@@ -30,6 +30,8 @@ section{
     line-height: 28px;
 }
 .datos p{
+    margin-bottom: 4px;
+    margin-top: 4px;
     font-size: 16px;
 }
 .datos p span{
