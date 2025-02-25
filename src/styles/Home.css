@@ -174,7 +174,11 @@ section .elipse-fu-s{
 }
 
 section .elipse-blu-s{
-    display: none;
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    width: 150px;
+    right: 0px;
 }
 
 /* Section 2 */
@@ -186,37 +190,39 @@ section .elipse-blu-s{
     padding-top: 70px;
     padding-bottom: 10px;
 }
+.text-head-dos p{
+    line-height: 20px;
+}
 .text-head-dos .content-text h1{
     font-weight: 500;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 28px;
-    padding: 16px 20px;
 }
 
-.content-text{
+/* .content-text{
     position: relative;
     width: auto;
     height: auto;
     padding: 4px 4px;
     
-}
+} */
 
-.content-text h1{
+/* .content-text h1{
     background-color: #080808;
     border: 0.8px solid rgb(3, 162, 220);
     cursor: text;
-}
+} */
 
-.corner {
+/* .corner {
     position: absolute;
     width: 8px;
     height: 8px;
     background-color: rgb(255, 255, 255);
     border: 0.8px solid rgb(3, 162, 220);
-  }
+  } */
 
   /* Posición de cada esquina */
-.top-left {
+/* .top-left {
     top: 0;
     left: 0;
   }
@@ -240,7 +246,7 @@ section .elipse-blu-s{
     line-height: 24px;
 }
 
-
+ */
 
 
 
@@ -355,6 +361,96 @@ section .elipse-blu-s{
     font-weight: 500;
     color: #ffffff;
 }
+
+
+/* TABLAS PARA EL UX Y FRONTEND */
+.table-home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+.table-ux{
+    max-width: 280px;
+    background-color: #080808;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+.technologies-ux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 260px;
+    padding: 10px;
+}
+.technologies-ux img{
+    width: 60px;
+}
+
+.table-ux h3,
+.table-front h3{
+    line-height: 28px;
+    margin-bottom: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+.table-front{
+    max-width: 280px;
+    background-color: #080808;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+.technologies-front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 260px;
+    padding: 10px;
+
+}
+.technologies-front img{
+    width: 60px;
+}
+
+.tooltip-container{
+    position: relative;
+    display: inline-block;
+}
+.tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px; /* Posición arriba de la imagen */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
 .tables{
     /* display: flex;
     flex-direction: column;
@@ -396,6 +492,7 @@ section .elipse-blu-s{
 
 
 
+
 /* Section 4 */
 
 .text-head-cuatro{
@@ -421,25 +518,53 @@ section .elipse-blu-s{
     padding-bottom: 70px;
 }
 article {
-    max-width: 500px;
-    height: auto;
-    overflow: hidden; /* Asegura que la imagen no se desborde */
+    min-width: 310px;
+    min-height: 210px;
     border-radius: 24px;
-    position: relative; /* Necesario para que la imagen se posicione dentro del contenedor */
-    transition: transform 0.3s ease; /* Efecto de transformación suave en el contenedor */
+     
+    transition: box-shadow 0.3s ease-in-out;
+
+    
+    background-size: cover; /* Ajusta la imagen para cubrir todo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    
+   
+    /* color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
-article .articulo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen mantenga sus proporciones */
-    transition: transform 0.3s ease; /* Animación para agrandar la imagen */
+article:hover{
+    box-shadow: 1px 1px 25px rgb(255, 255, 255); /* Sombra más pronunciada en hover */
 }
 
-article:hover .articulo {
-    transform: scale(1.1); /* Escala la imagen al hacer hover */
+.articli-interbank{
+    background-image: url('../assets/interbank.png'); /* Ruta de la imagen */
 }
 
+.articli-it{
+    background-image: url('../assets/ithub.png'); /* Ruta de la imagen */
+}
+
+.articli-system{
+    background-image: url('../assets/design-system-interbank.png'); /* Ruta de la imagen */
+}
+
+.articli-continental{
+    background-image: url('../assets/uni-continental.png'); /* Ruta de la imagen */
+}
+
+.articli-behance{
+    background-image: url('../assets/behance-card.png'); /* Ruta de la imagen */
+}
+
+
+/* article:hover .articulo {
+    transform: scale(1.1); 
+}
+ */
 
 
 /* MODAL */
@@ -495,20 +620,19 @@ article:hover .articulo {
         width: 800px;
         position: absolute;
         z-index: -1;
-        left: -160px;
+        left: -200px;
         top: -180px;
     }
-     .elipse-blu-s{
-        display: block;
-        position: absolute;
+    section .elipse-blu-s{
         width: 500px;
-        z-index: -1;
-        left: 650px;
-        top: 50px;
+        top: -20px;
+    }
+    .contenedor{
+        margin-top: 300px;
     }
     
     .text-head{
-        padding-top: 60px;
+        padding-top: 100px;
     }
     .text-head h1{
         font-size: 60px;
@@ -563,14 +687,14 @@ article:hover .articulo {
     .invision{
         position: absolute;
         display: block;
-        width: 120px;
-        margin-top: -10px;
+        width: 140px;
+        margin-top: 30px;
         margin-left: -650px;
     }
     .figma-ico{
         position: absolute;
-        margin-top: 250px;
-        margin-right: 750px;
+        margin-top: 280px;
+        margin-right: 690px;
         width: 150px;
     }
 
@@ -582,7 +706,8 @@ article:hover .articulo {
         flex-wrap: nowrap;
         /* flex-direction: row; */
         /* align-items: normal; */
-        padding-top: 50px;
+        padding-top: 80px;
+        padding-bottom: 50px;
         
     }
     
@@ -593,6 +718,13 @@ article:hover .articulo {
         max-width: 550px;
         padding-top: 20px;
         padding-bottom: 10px;
+    }
+
+   
+    .text-head-dos .content-text h1{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 34px;
     }
     
     .text-head-dos p{
@@ -638,6 +770,68 @@ article:hover .articulo {
         font-weight: 400;
         color: #ffffff;
     }
+
+
+
+
+    /* TECHNOLOGIAS FRONTEND */
+        
+
+    .table-ux{
+        max-width: 470px;
+        background-color: #080808;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 20px 20px;
+    }
+    .technologies-ux{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 450px;
+        padding: 10px;
+    }
+    .technologies-ux img{
+        width: 80px;
+    }
+
+    .table-ux h3,
+    .table-front h3{
+        line-height: 28px;
+        margin-bottom: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .table-front{
+        max-width: 470px;
+        background-color: #080808;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 20px 20px;
+    }
+    .technologies-front{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 450px;
+        padding: 10px;
+        
+    }
+    .technologies-front img{
+        width: 70px;
+    }
+
+
+
+
+
+
+
+
     .tables{
         /* display: flex;
         flex-direction: row;
@@ -665,8 +859,13 @@ article:hover .articulo {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 
-        auto;
+        margin: 0 auto;
+    }
+    .text-head-cuatro h1{
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 36px;
+        margin-bottom: 40px;
     }
     .portafolio{
         width: 100%;
@@ -674,9 +873,12 @@ article:hover .articulo {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 50px;
     }
     .portafolio article{
-        width: 500px;
+        width: 510px;
+        height: 350px;
     }
+
+
 }

@@ -30,6 +30,8 @@ const NavBar = () => {
     window.scrollTo(0, 0);
   };
 
+  
+
   /* Manejo de portafolio */
   const handleScroll = () => {
     const portafolio = document.getElementById('portafolio');
@@ -77,15 +79,19 @@ const NavBar = () => {
                     Inicio
                 </Link>
                 </li>
+
+                {/* UN STOP sobre mi */}
                 <li>
                 <Link
                     to="/sobre-mi"
                     className="link-mobile"
                     onClick={close}
                 >
-                    Experiencia
+                    Sobre mí
                 </Link>
                 </li>
+
+
                 <li>
                 <a
                     to="/portafolio"
@@ -114,15 +120,21 @@ const NavBar = () => {
                 Inicio
               </Link>
             </li>
+
+
+          {/* UN STOP sobre mi */}
+
             <li>
               <Link
                 to="/sobre-mi"
                 className={`menu-item ${active === "sobre-mi" ? "active" : ""}`}
                 onClick={() => handleActive("sobre-mi")}
               >
-                Experiencia
+                Sobre mí
               </Link>
             </li>
+
+
             <li>
               <a
                 to="/portafolio"

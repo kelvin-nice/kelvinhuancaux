@@ -96,7 +96,7 @@
         display: flex;
         align-items: center;
     
-        background-color: rgba(7, 8, 27, 0.7); /* Fondo negro con 70% de opacidad */
+        background-color: rgba(7, 8, 27, 0); /* Fondo negro con 70% de opacidad */
         backdrop-filter: blur(5px); /* Desenfoque de los elementos detrás */
         -webkit-backdrop-filter: blur(25px);
     }

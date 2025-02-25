@@ -3,6 +3,7 @@ import elipseFuS from '../assets/Ellipse-fu-s.png'
 import foto from '../assets/foto.png'
 import idc from "../assets/idc.png"
 import idat from "../assets/idat.png"
+import upc from "../assets/upc.png"
 
 const SobreMi = () => {
   return (
@@ -28,25 +29,19 @@ const SobreMi = () => {
             <div className='formacion' >
             <img className='idat' src={idat} alt="idat" /> <p><span>Desarrollo Frontend</span></p> 
             </div>
+
+            <div className='formacion upc-formacion' >
+            <img className='upc' src={upc} alt="idat" /> <p><span>Ingeniería de Sistemas</span></p> 
+            </div>
           </div>
           
-          {/* <a href="https://www.linkedin.com/in/kelvinhuancadesigner/" target="_blank" ><img
-                      src={linkedinLogo}
-                      alt="LinkedIn"
-                      width="30"
-                      height="30"
-                      className="linkedin"
-                    />  </a> */}
+               
 
-          {/* <div className='educacion' >
-          <h2>Experiencia</h2>
-          </div>   */}        
-
-          <div className='experiencias' >
+          {/* <div className='experiencias' >
             <h2>Experiencia</h2>
 
 
-            {/* Independiente */}
+            
             <article className='experiencia' >
             <p><span>Independiente (Freelance)</span></p>
             <p>Cargo: <span>UX UI designer</span></p>
@@ -70,7 +65,7 @@ const SobreMi = () => {
 
 
 
-            {/* INTERBANK */}
+            
             <article className='experiencia' >
             <p>Empresa: <span>INTERBANK</span></p>
             <p>Cargo: <span>UX UI designer</span></p>
@@ -98,7 +93,12 @@ const SobreMi = () => {
             </article>
 
             <br/>
-            {/* SGS */}
+
+
+
+
+
+            
             <article className='experiencia' >
             <p>Empresa: <span>SGS</span></p>
             <p>Cargo: <span>UX UI designer</span></p>
@@ -131,7 +131,7 @@ const SobreMi = () => {
 
             <br/>
 
-            {/* Farmacias Peruanas S.A. */}
+            
             <article className='experiencia' >
             <p>Empresa: <span>Farmacias Peruanas S.A.</span></p>
             <p>Cargo: <span>UX/UI (Proyecto 3 meses)</span></p>
@@ -160,7 +160,7 @@ const SobreMi = () => {
             </article>
 
 
-             {/* El Pregón Digital */}
+             
              <article className='experiencia' >
             <p>Empresa: <span>UX / UI and FRONT END</span></p>
             <p>Cargo: <span>UX/UI (Proyecto 3 meses)</span></p>
@@ -183,7 +183,9 @@ const SobreMi = () => {
             </div>
             </article>
 
-          </div>
+          </div> */}
+            
+          
         </div>
       </div>
     </section>

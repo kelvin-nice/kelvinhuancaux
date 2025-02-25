@@ -51,7 +51,7 @@ const Interbank = () => {
         <div className='estrategia' >
           <h2>Estrategia </h2>
           <div className='contenido'>
-          <p>La solución que se aplicó fué hacer una investigación de las diferentes maneras de seguridad que existen, entrevistas y benchmarck al detalle. Además lo que conlleva a entregar un nuevo user-flow y prototipo. Usaré el framework <span>Design Thinking</span> para organizarnos en las etapas del desarrollo solutivo. </p>
+          <p>Partiendo desde la investigación de las diferentes maneras de seguridad que existen validadas por la SBS, entrevistas y benchmarck al detalle. Hasta la exposición y discución de las desiciones a tomar y finalizar con la entregar de un nuevo user-flow y prototipo. Usaré el framework <span>Design Thinking</span> para organizarnos en las etapas del desarrollo solutivo. </p>
           <img src={processInterbank} alt="design thinking" className='thinking-interbank' />
          {/*  <div className='content-thinking-interbank' >
             
@@ -135,7 +135,7 @@ const Interbank = () => {
         {/* Conclusión general */}
         <div className='requerimiento' >
           <h2>Conclusión general</h2>
-          <p>Este researching fué de gran impacto para la desición del equipo en un momento dado, donde el SPRINT contaba con poco tiempo y se optó una solución rápida de acuerdo con los componentes desarrollados en ambiente por el equipo de desarrollo y las escasa semana  para presentarlo. Fué exitoso!.</p>
+          <p>Al ser un flujo sencillo tenía que tener un buen researching que pueda ser capaz de sustentar una desición tan importante. Este researching fué de gran impacto para la desición del equipo. Además de los stoppers como el poco tiempo y de usar solo los componentes existentes. Fué exitoso!.</p>
         </div>
         <br/>
         <br/>
